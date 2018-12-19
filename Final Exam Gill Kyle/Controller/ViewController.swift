@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var conferences = ConfDatabase.sharedConfDatabase.conferences()
+        let conferences = ConfDatabase.sharedConfDatabase.conferences()
         print(conferences)
     }
 

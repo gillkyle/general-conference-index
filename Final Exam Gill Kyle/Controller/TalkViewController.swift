@@ -34,7 +34,6 @@ class TalkViewController : UIViewController, WKNavigationDelegate {
     
     // show indicator
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        // Start Activity Indicator
         print("start load")
         myActivityIndicator.startAnimating()
     }
@@ -44,7 +43,6 @@ class TalkViewController : UIViewController, WKNavigationDelegate {
         print("end load")
         myActivityIndicator.stopAnimating()
     }
-    
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         print("error")
         myActivityIndicator.stopAnimating()
