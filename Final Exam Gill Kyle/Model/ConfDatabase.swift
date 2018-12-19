@@ -56,7 +56,7 @@ class ConfDatabase {
             let talks = try dbQueue.inDatabase { (db: Database) -> [Talk] in
                 var talks = [Talk]()
                 for row in try Row.fetchAll(db,
-                                            "SELECT t.ID, t.Title, s.Description, sp.GivenNames, sp.LastNames FROM talk t JOIN conference_talk c JOIN conf_session s JOIN speaker sp WHERE t.ID=c.TalkID AND c.SessionID=s.ID AND sp.ID=t.SpeakerID AND s.ConferenceID=? ORDER BY s.Sequence, c.Sequence", arguments: [ conferenceId ]) {
+                                            "SELECT t.ID, t.Title, t.URL, s.Description, sp.GivenNames, sp.LastNames FROM talk t JOIN conference_talk c JOIN conf_session s JOIN speaker sp WHERE t.ID=c.TalkID AND c.SessionID=s.ID AND sp.ID=t.SpeakerID AND s.ConferenceID=? ORDER BY s.Sequence, c.Sequence", arguments: [ conferenceId ]) {
                                                 talks.append(Talk(row: row))
                 }
                 return talks
@@ -66,4 +66,9 @@ class ConfDatabase {
             return []
         }
     }
+    
+    //
+    // HTML for talk id
+    //
+    
 }

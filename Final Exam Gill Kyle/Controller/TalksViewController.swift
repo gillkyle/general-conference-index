@@ -12,6 +12,7 @@ class TalksViewController : UITableViewController {
     // MARK - Constants
     private struct Storyboard {
         static let TalksCellIdentifier = "TalkCell"
+        static let ShowTalkSegue = "ShowTalk"
     }
     
     // MARK - Properties
@@ -24,6 +25,17 @@ class TalksViewController : UITableViewController {
         
         updateModel()
         print(talks)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Storyboard.ShowTalkSegue {
+            if let talkVC = segue.destination as? TalkViewController {
+                if let indexPath = sender as? IndexPath {
+                    talkVC.talk = talks[indexPath.row]
+                    // talksVC.conferenceId = indexPath.row + 1
+                }
+            }
+        }
     }
     
     // MARK - Table View data source
@@ -42,7 +54,7 @@ class TalksViewController : UITableViewController {
     
     // MARK - Table View delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
+        performSegue(withIdentifier: Storyboard.ShowTalkSegue, sender: indexPath)
     }
     
     // MARK - Helpers

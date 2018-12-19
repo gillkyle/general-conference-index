@@ -15,6 +15,7 @@ struct Talk : TableRecord, FetchableRecord {
     var title: String
     var description: String
     var speakerName: String
+    var url: String
     
     // MARK: - Table mapping
     static let databaseTableName = "conference_talk"
@@ -25,6 +26,7 @@ struct Talk : TableRecord, FetchableRecord {
     static let description = "Description"
     static let givenNames = "GivenNames"
     static let lastNames = "LastNames"
+    static let url = "URL"
     
     // MARK: - Initialization
     init() {
@@ -32,6 +34,7 @@ struct Talk : TableRecord, FetchableRecord {
         title = ""
         description = ""
         speakerName = ""
+        url = ""
     }
     
     init(row: Row) {
@@ -39,6 +42,7 @@ struct Talk : TableRecord, FetchableRecord {
         title = row[Talk.title]
         description = row[Talk.description]
         speakerName = row[Talk.givenNames] + " " + row[Talk.lastNames]
+        url = row[Talk.url]
     }
 }
 

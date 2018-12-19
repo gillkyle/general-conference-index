@@ -18,6 +18,7 @@
 		2785297021CA8F3C0003B8EE /* ConferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2785296F21CA8F3B0003B8EE /* ConferencesViewController.swift */; };
 		2785297221CA966D0003B8EE /* TalksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2785297121CA966D0003B8EE /* TalksViewController.swift */; };
 		2785297421CA97D10003B8EE /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2785297321CA97D10003B8EE /* Talk.swift */; };
+		2785297621CA9F840003B8EE /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2785297521CA9F840003B8EE /* TalkViewController.swift */; };
 		5198B55CF2462904A9B0C687 /* Pods_Final_Exam_Gill_Kyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDCE4FC7585F5EA710EAAC4 /* Pods_Final_Exam_Gill_Kyle.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		2785296F21CA8F3B0003B8EE /* ConferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferencesViewController.swift; sourceTree = "<group>"; };
 		2785297121CA966D0003B8EE /* TalksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksViewController.swift; sourceTree = "<group>"; };
 		2785297321CA97D10003B8EE /* Talk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		2785297521CA9F840003B8EE /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
 		4CDCE4FC7585F5EA710EAAC4 /* Pods_Final_Exam_Gill_Kyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_Exam_Gill_Kyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFB55EF35246AAD7BB32E6C /* Pods-Final Exam Gill Kyle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Exam Gill Kyle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Final Exam Gill Kyle/Pods-Final Exam Gill Kyle.debug.xcconfig"; sourceTree = "<group>"; };
 		E53E7B77BE505AB573EC5A47 /* Pods-Final Exam Gill Kyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Exam Gill Kyle.release.xcconfig"; path = "Pods/Target Support Files/Pods-Final Exam Gill Kyle/Pods-Final Exam Gill Kyle.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				2785295421CA88930003B8EE /* ViewController.swift */,
 				2785296F21CA8F3B0003B8EE /* ConferencesViewController.swift */,
 				2785297121CA966D0003B8EE /* TalksViewController.swift */,
+				2785297521CA9F840003B8EE /* TalkViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				2785296B21CA8B320003B8EE /* ConfDatabase.swift in Sources */,
 				2785295321CA88930003B8EE /* AppDelegate.swift in Sources */,
 				2785296E21CA8CB60003B8EE /* Conference.swift in Sources */,
+				2785297621CA9F840003B8EE /* TalkViewController.swift in Sources */,
 				2785297021CA8F3C0003B8EE /* ConferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
