@@ -42,7 +42,7 @@ class ConferencesViewController : UITableViewController {
     }
     
     // MARK - Table View delegate
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: Storyboard.ShowBooksSegue, sender: indexPath)
-    }
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        performSegue(withIdentifier: Storyboard.ShowBooksSegue, sender: indexPath)
+//    }
 }
