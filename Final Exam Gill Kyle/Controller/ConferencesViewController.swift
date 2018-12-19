@@ -11,22 +11,22 @@ class ConferencesViewController : UITableViewController {
     // MARK - Constants
     private struct Storyboard {
         static let ConferenceCellIdentifier = "ConferenceCell"
-        static let ShowBooksSegue = "ShowBooks"
+        static let ShowTalksSegue = "ShowTalks"
     }
     
     // MARK - Properties
     var conferences = ConfDatabase.sharedConfDatabase.conferences()
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == Storyboard.ShowBooksSegue {
-//            if let booksVC = segue.destination as? BooksViewController {
-//                if let indexPath = sender as? IndexPath {
-//                    booksVC.volume = conferences[indexPath.row]
-//                    booksVC.volumeId = indexPath.row + 1
-//                }
-//            }
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Storyboard.ShowTalksSegue {
+            if let talksVC = segue.destination as? TalksViewController {
+                if let indexPath = sender as? IndexPath {
+                    talksVC.conference = conferences[indexPath.row]
+                    // talksVC.conferenceId = indexPath.row + 1
+                }
+            }
+        }
+    }
     
     // MARK - Table View data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,7 +42,7 @@ class ConferencesViewController : UITableViewController {
     }
     
     // MARK - Table View delegate
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: Storyboard.ShowBooksSegue, sender: indexPath)
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: Storyboard.ShowTalksSegue, sender: indexPath)
+    }
 }

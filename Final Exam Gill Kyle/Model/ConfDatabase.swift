@@ -47,4 +47,23 @@ class ConfDatabase {
             return []
         }
     }
+    
+    //
+    // Return a list of talks for a given conference ID
+    //
+    func talksForId(_ conferenceId: Int) -> [Talk] {
+        do {
+            let talks = try dbQueue.inDatabase { (db: Database) -> [Talk] in
+                var talks = [Talk]()
+                for row in try Row.fetchAll(db,
+                                            "SELECT t.ID, t.Title, s.Description FROM talk t JOIN conference_talk c JOIN conf_session s WHERE t.ID=c.TalkID AND c.SessionID=s.ID AND s.ConferenceID=? ORDER BY s.Sequence, c.Sequence", arguments: [ conferenceId ]) {
+                                                talks.append(Talk(row: row))
+                }
+                return talks
+            }
+            return talks
+        } catch {
+            return []
+        }
+    }
 }
