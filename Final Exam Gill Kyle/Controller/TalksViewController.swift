@@ -24,7 +24,6 @@ class TalksViewController : UITableViewController {
         title = "Talks"
         
         updateModel()
-        print(talks)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -32,7 +31,6 @@ class TalksViewController : UITableViewController {
             if let talkVC = segue.destination as? TalkViewController {
                 if let indexPath = sender as? IndexPath {
                     talkVC.talk = talks[indexPath.row]
-                    // talksVC.conferenceId = indexPath.row + 1
                 }
             }
         }

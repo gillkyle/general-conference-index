@@ -22,7 +22,6 @@ class ConferencesViewController : UITableViewController {
             if let talksVC = segue.destination as? TalksViewController {
                 if let indexPath = sender as? IndexPath {
                     talksVC.conference = conferences[indexPath.row]
-                    // talksVC.conferenceId = indexPath.row + 1
                 }
             }
         }
