@@ -35,6 +35,7 @@ class TalksViewController : UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.TalksCellIdentifier, for: indexPath)
         
         cell.textLabel?.text = talks[indexPath.row].title
+        cell.detailTextLabel?.text = talks[indexPath.row].speakerName
         
         return cell
     }
