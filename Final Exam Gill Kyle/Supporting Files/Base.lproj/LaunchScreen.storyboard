@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Final Launchscreen" translatesAutoresizingMaskIntoConstraints="NO" id="CyB-7c-1f3">
-                                <rect key="frame" x="67" y="220" width="240" height="240"/>
+                                <rect key="frame" x="67.5" y="223.5" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="962-tU-W7x"/>
                                     <constraint firstAttribute="height" constant="240" id="DdJ-CR-96Q"/>
@@ -29,10 +29,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="CyB-7c-1f3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="PMc-yS-DYE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CyB-7c-1f3" secondAttribute="bottom" constant="207" id="iRX-gA-efO"/>
-                            <constraint firstItem="CyB-7c-1f3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="jsH-f1-N3U"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CyB-7c-1f3" secondAttribute="trailing" constant="68" id="npN-m7-6PQ"/>
+                            <constraint firstItem="CyB-7c-1f3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="500" constant="200" id="PMc-yS-DYE"/>
+                            <constraint firstItem="CyB-7c-1f3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="R6b-fq-BdS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CyB-7c-1f3" secondAttribute="bottom" priority="500" constant="207" id="iRX-gA-efO"/>
+                            <constraint firstItem="CyB-7c-1f3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="500" constant="67" id="jsH-f1-N3U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CyB-7c-1f3" secondAttribute="trailing" priority="500" constant="68" id="npN-m7-6PQ"/>
+                            <constraint firstItem="CyB-7c-1f3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="uc7-Aq-MOE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
