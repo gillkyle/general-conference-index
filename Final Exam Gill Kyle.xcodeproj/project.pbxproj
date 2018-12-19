@@ -12,6 +12,8 @@
 		2785295821CA88930003B8EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2785295621CA88930003B8EE /* Main.storyboard */; };
 		2785295A21CA88970003B8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2785295921CA88970003B8EE /* Assets.xcassets */; };
 		2785295D21CA88970003B8EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2785295B21CA88970003B8EE /* LaunchScreen.storyboard */; };
+		2785296921CA891B0003B8EE /* core.23.db in Resources */ = {isa = PBXBuildFile; fileRef = 2785296821CA891B0003B8EE /* core.23.db */; };
+		5198B55CF2462904A9B0C687 /* Pods_Final_Exam_Gill_Kyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDCE4FC7585F5EA710EAAC4 /* Pods_Final_Exam_Gill_Kyle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		2785295921CA88970003B8EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2785295C21CA88970003B8EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2785295E21CA88970003B8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2785296821CA891B0003B8EE /* core.23.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = core.23.db; sourceTree = "<group>"; };
+		4CDCE4FC7585F5EA710EAAC4 /* Pods_Final_Exam_Gill_Kyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_Exam_Gill_Kyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBFB55EF35246AAD7BB32E6C /* Pods-Final Exam Gill Kyle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Exam Gill Kyle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Final Exam Gill Kyle/Pods-Final Exam Gill Kyle.debug.xcconfig"; sourceTree = "<group>"; };
+		E53E7B77BE505AB573EC5A47 /* Pods-Final Exam Gill Kyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Exam Gill Kyle.release.xcconfig"; path = "Pods/Target Support Files/Pods-Final Exam Gill Kyle/Pods-Final Exam Gill Kyle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5198B55CF2462904A9B0C687 /* Pods_Final_Exam_Gill_Kyle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C9B55B5F14631DFC8A8D199 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBFB55EF35246AAD7BB32E6C /* Pods-Final Exam Gill Kyle.debug.xcconfig */,
+				E53E7B77BE505AB573EC5A47 /* Pods-Final Exam Gill Kyle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2785294621CA88930003B8EE = {
 			isa = PBXGroup;
 			children = (
 				2785295121CA88930003B8EE /* Final Exam Gill Kyle */,
 				2785295021CA88930003B8EE /* Products */,
+				1C9B55B5F14631DFC8A8D199 /* Pods */,
+				7723B598004E139C51CDFFAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,55 @@
 		2785295121CA88930003B8EE /* Final Exam Gill Kyle */ = {
 			isa = PBXGroup;
 			children = (
-				2785295221CA88930003B8EE /* AppDelegate.swift */,
-				2785295421CA88930003B8EE /* ViewController.swift */,
-				2785295621CA88930003B8EE /* Main.storyboard */,
-				2785295921CA88970003B8EE /* Assets.xcassets */,
-				2785295B21CA88970003B8EE /* LaunchScreen.storyboard */,
 				2785295E21CA88970003B8EE /* Info.plist */,
+				2785296721CA88D20003B8EE /* Supporting Files */,
+				2785296621CA88C50003B8EE /* Model */,
+				2785296521CA88C00003B8EE /* View */,
+				2785296421CA88B70003B8EE /* Controller */,
+				2785295921CA88970003B8EE /* Assets.xcassets */,
 			);
 			path = "Final Exam Gill Kyle";
+			sourceTree = "<group>";
+		};
+		2785296421CA88B70003B8EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2785295421CA88930003B8EE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2785296521CA88C00003B8EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2785295621CA88930003B8EE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2785296621CA88C50003B8EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2785296721CA88D20003B8EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2785296821CA891B0003B8EE /* core.23.db */,
+				2785295221CA88930003B8EE /* AppDelegate.swift */,
+				2785295B21CA88970003B8EE /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7723B598004E139C51CDFFAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CDCE4FC7585F5EA710EAAC4 /* Pods_Final_Exam_Gill_Kyle.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2785296121CA88970003B8EE /* Build configuration list for PBXNativeTarget "Final Exam Gill Kyle" */;
 			buildPhases = (
+				7FD5FDE8CAE15D8B333B9B6F /* [CP] Check Pods Manifest.lock */,
 				2785294B21CA88930003B8EE /* Sources */,
 				2785294C21CA88930003B8EE /* Frameworks */,
 				2785294D21CA88930003B8EE /* Resources */,
+				580C78ED825691E9469CB4C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +185,59 @@
 			files = (
 				2785295D21CA88970003B8EE /* LaunchScreen.storyboard in Resources */,
 				2785295A21CA88970003B8EE /* Assets.xcassets in Resources */,
+				2785296921CA891B0003B8EE /* core.23.db in Resources */,
 				2785295821CA88930003B8EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		580C78ED825691E9469CB4C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Final Exam Gill Kyle/Pods-Final Exam Gill Kyle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Final Exam Gill Kyle/Pods-Final Exam Gill Kyle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FD5FDE8CAE15D8B333B9B6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Final Exam Gill Kyle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2785294B21CA88930003B8EE /* Sources */ = {
@@ -280,6 +389,7 @@
 		};
 		2785296221CA88970003B8EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBFB55EF35246AAD7BB32E6C /* Pods-Final Exam Gill Kyle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +407,7 @@
 		};
 		2785296321CA88970003B8EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E53E7B77BE505AB573EC5A47 /* Pods-Final Exam Gill Kyle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
